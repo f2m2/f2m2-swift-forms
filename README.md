@@ -1,6 +1,6 @@
 #FormGenerator
 
-FormGenerator is a small collection of Swift files that attempts to flexibly address the need for more dynamic forms powered by your model using protocols and a controller.
+F2M2 Swift FormGenerator is a small collection of Swift files that attempts to flexibly address the need for more dynamic forms powered by your model using protocols and a controller.
 
 You can directly copy the FormGenerator group's contents to your project's directory. 
 
