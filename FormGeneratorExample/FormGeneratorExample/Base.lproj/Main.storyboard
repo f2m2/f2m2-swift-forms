@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FormGeneratorExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txe-zh-pTv">
+                                <rect key="frame" x="257" y="240" width="86" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="Gnr-NV-bwC"/>
+                                    <constraint firstAttribute="height" constant="36" id="PZA-uV-eFc"/>
+                                </constraints>
+                                <state key="normal" title="Register">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zvD-JN-iHr" kind="presentation" id="eFo-At-p4o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGv-Jd-Jcc">
+                                <rect key="frame" x="243" y="309" width="114" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HEC-oB-i4a"/>
+                                    <constraint firstAttribute="width" constant="114" id="euV-u3-APK"/>
+                                </constraints>
+                                <state key="normal" title="Settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OrG-BJ-78p" kind="presentation" id="OGv-dz-9Ri"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VGv-Jd-Jcc" firstAttribute="top" secondItem="Txe-zh-pTv" secondAttribute="bottom" constant="33" id="0nZ-Io-g0M"/>
+                            <constraint firstAttribute="centerX" secondItem="Txe-zh-pTv" secondAttribute="centerX" id="3KE-Z0-RpE"/>
+                            <constraint firstItem="VGv-Jd-Jcc" firstAttribute="centerX" secondItem="Txe-zh-pTv" secondAttribute="centerX" id="878-Yl-oel"/>
+                            <constraint firstAttribute="centerY" secondItem="Txe-zh-pTv" secondAttribute="centerY" constant="42" id="NPh-MU-GkU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182" y="445"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="alh-qY-hK2">
+            <objects>
+                <viewController id="qGO-hu-O7V" customClass="RegistrationViewController" customModule="ExampleUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="39U-lv-8df"/>
+                        <viewControllerLayoutGuide type="bottom" id="D1n-bf-BGs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dRL-u4-Cdo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m0j-Tr-zUx">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="c0Y-Ks-PN7">
+                            <connections>
+                                <action selector="cancelAction:" destination="qGO-hu-O7V" id="83M-Qq-SUH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KM8-fz-fw3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="202"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="tW8-nc-CvC">
+            <objects>
+                <viewController id="EGD-M8-j9F" customClass="SettingsViewController" customModule="ExampleUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Em7-t5-dsX"/>
+                        <viewControllerLayoutGuide type="bottom" id="llF-lX-8pS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NdZ-uK-dy2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aOo-Bq-IPf">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="dfS-Ub-Pmm">
+                            <connections>
+                                <action selector="cancelAction:" destination="EGD-M8-j9F" id="WwA-R3-cKs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jad-zi-zgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="853"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Nq1-ie-e3s">
+            <objects>
+                <viewController storyboardIdentifier="webViewController" id="Hcv-Wy-cPK" customClass="WebViewController" customModule="ExampleUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1d3-kJ-9LH"/>
+                        <viewControllerLayoutGuide type="bottom" id="cxk-H7-cUC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="abE-Kx-bml">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcK-vA-kWk">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hcK-vA-kWk" firstAttribute="top" secondItem="1d3-kJ-9LH" secondAttribute="bottom" constant="24" id="0C4-JP-iqC"/>
+                            <constraint firstAttribute="trailing" secondItem="hcK-vA-kWk" secondAttribute="trailing" id="1oD-2N-b07"/>
+                            <constraint firstItem="cxk-H7-cUC" firstAttribute="top" secondItem="hcK-vA-kWk" secondAttribute="bottom" id="LTe-po-J8n"/>
+                            <constraint firstItem="hcK-vA-kWk" firstAttribute="leading" secondItem="abE-Kx-bml" secondAttribute="leading" id="nsY-Ai-uaS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webViewController" destination="hcK-vA-kWk" id="ZNU-Mg-1JD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9PU-o1-k2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1867" y="853"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7J2-9i-nWU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zvD-JN-iHr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hT0-0L-T0c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qGO-hu-O7V" kind="relationship" relationship="rootViewController" id="mU0-YC-e3g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzX-wL-rHi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="202"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7u9-dt-W8H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OrG-BJ-78p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ILG-Ik-Fmh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EGD-M8-j9F" kind="relationship" relationship="rootViewController" id="lKU-WW-wcU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a7t-ym-zgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572" y="847"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="cFm-KR-rKb">
+            <objects>
+                <viewController storyboardIdentifier="UserViewController" id="HEC-cL-wcn" customClass="LoginVC" customModule="ExampleUsage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XGe-Cg-uyY"/>
+                        <viewControllerLayoutGuide type="bottom" id="2oV-7o-SBi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AWv-Xv-gdy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cUM-8v-xOT">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="j1E-ET-EgK">
+                            <connections>
+                                <action selector="cancelAction:" destination="HEC-cL-wcn" id="DN0-Zo-Lab"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUF-Pm-Jpc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1867" y="202"/>
+        </scene>
+    </scenes>
+</document>
